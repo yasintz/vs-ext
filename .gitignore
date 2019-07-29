@@ -1,0 +1,15 @@
+template/note_template/node_modules
+localextension/node_modules
+**/node_modules/**
+.vscode-test/
+*.vsix
+*.log
+
+.vscode
+
+localextension/out
+localextension/sample
+localextension/extension.js
+localextension/src/note/template
+template/note_template/dist
+bundle

@@ -1,0 +1,62 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": 2,
+    "indent": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "eqeqeq": 2,
+    "max-len": [2, { "code": 120, "ignoreUrls": true }],
+    "arrow-body-style": 0,
+    "import/no-unresolved": 0,
+    "import/prefer-default-export": 0,
+    "no-console": 2,
+    "no-underscore-dangle": 0,
+    "class-methods-use-this": 0,
+    "implicit-arrow-linebreak": 0,
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "@typescript-eslint/interface-name-prefix": 0,
+    "@typescript-eslint/no-empty-interface": 0,
+    "@typescript-eslint/no-unused-vars": 2,
+    "lines-between-class-members": ["error", "always"],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": ["block", "class", "export"]
+      },
+      {
+        "blankLine": "any",
+        "prev": ["const", "let", "var"],
+        "next": ["const", "let", "var"]
+      },
+      {
+        "blankLine": "always",
+        "prev": ["*"],
+        "next": ["return"]
+      }
+    ]
+  },
+  "globals": {
+    "describe": true,
+    "test": true,
+    "expect": true,
+    "beforeAll": true,
+    "beforeEach": true,
+    "afterAll": true,
+    "afterEach": true,
+    "FileReader": true,
+    "window": true,
+    "document": true
+  },
+  "env": {
+    "jest": true
+  }
+}

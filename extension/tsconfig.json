@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "outDir": "out",
+    "lib": ["es5", "dom"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "sourceMap": true,
+    "rootDir": ".",
+    "strict": true
+  },
+  "exclude": ["**/node_modules", ".vscode-test", "template"]
+}
